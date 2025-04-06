@@ -1,4 +1,5 @@
 # AngularPortfolioWebsite
+<<<<<<< HEAD
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
@@ -57,3 +58,9 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+This repository is use to learn Angular by following tutorial on youtube.
+
+Shoutout to Software Engineering Skills youtube channel for this amazing Angular tutorial.
+Link: https://www.youtube.com/playlist?list=PLN0Th-4WgKrUVQlqa14mUDeymTW1luznW
+>>>>>>> 06fc73d04367efd657c8ca1a5891d66c77d820fe
