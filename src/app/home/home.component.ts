@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { ProjectsService } from '../_services/projects.service';
+import { Project } from '../_models/Project';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +9,16 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  constructor(private titleService:Title) {
+  featuredProject = {} as Project;
+
+  constructor(private titleService:Title, private projectService: ProjectsService) {
     this.titleService.setTitle('Akif Aziz | Home');
    }
+
+  ngOnInit(): void {
+   this.featuredProject = this.projectService.GetProjectById(0);
+  }
 
 }
