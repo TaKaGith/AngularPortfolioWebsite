@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'  # Angular 19 works fine on Node 18 or Node 20
+        node-version: '18'
 
     - name: Install project dependencies
       run: npm install
@@ -32,5 +32,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/AngularPortfolioWebsite  # << Important: match your project name
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # This is important to give push permissions
+        publish_dir: ./dist/AngularPortfolioWebsite  # Ensure this is correct
