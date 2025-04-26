@@ -32,7 +32,7 @@ export class ProjectsService {
       description: 'This is sample Power BI Project',
       projectLink: 'https://github.com/TaKaGith',
       pictures: ["../../assets/image_1.jpg","../../assets/image_2.jpg","../../assets/image_3.jpg"],
-      tags: [Tag.CSHARP],
+      tags: [Tag.DART],
     },
   ];
 

@@ -10,6 +10,7 @@ static readonly NODEJS = new Tag('Node.JS', 'brown');
 static readonly ASPNET = new Tag('ASP.NET', 'purple');
 static readonly JAVASCRIPT = new Tag('JavaScript', 'orange');
 static readonly REACT = new Tag('React', 'blue');
+static readonly DART = new Tag('Dart', 'turquoise');
 
 private constructor(private readonly key: string, public readonly color: string) {
 
