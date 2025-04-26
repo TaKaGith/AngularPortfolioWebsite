@@ -32,5 +32,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4  # Deploy the built app to GitHub Pages
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # Automatically use GitHub Actions token (or you can use a custom token if needed)
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # Automatically use GitHub Actions token
         publish_dir: ./dist/AngularPortfolioWebsite  # Ensure this path matches your Angular output directory
