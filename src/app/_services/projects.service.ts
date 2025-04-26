@@ -13,7 +13,7 @@ export class ProjectsService {
       summary: 'Test Description',
       description: 'This is sample Angular Project',
       projectLink: 'https://github.com/TaKaGith',
-      pictures: ["../../assets/image_1.jpg","../../assets/image_2.jpg","../../assets/image_3.jpg"],
+      pictures: ["/assets/image_1.jpg","/assets/image_2.jpg","/assets/image_3.jpg"],
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
     },
     {
@@ -22,7 +22,7 @@ export class ProjectsService {
       summary: 'Test Description',
       description: 'This is sample C# Project',
       projectLink: 'https://github.com/TaKaGith',
-      pictures: ["../../assets/image_1.jpg","../../assets/image_2.jpg","../../assets/image_3.jpg"],
+      pictures: ["/assets/image_1.jpg","/assets/image_2.jpg","/assets/image_3.jpg"],
       tags: [Tag.CSHARP],
     },
     {
@@ -31,7 +31,7 @@ export class ProjectsService {
       summary: 'Test Description',
       description: 'This is a sample Power BI Project',
       projectLink: 'https://github.com/TaKaGith',
-      pictures: ["../../assets/image_1.jpg","../../assets/image_2.jpg","../../assets/image_3.jpg"],
+      pictures: ["/assets/image_1.jpg","/assets/image_2.jpg","/assets/image_3.jpg"],
       tags: [Tag.DART],
     },
   ];
