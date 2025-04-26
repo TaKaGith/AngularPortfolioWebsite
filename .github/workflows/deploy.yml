@@ -1,36 +1,34 @@
-name: Build and Deploy Angular App from Main Branch
+name: Build and Deploy Angular App to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Trigger the pipeline when pushing to the main branch
+      - main  # when you push to main branch
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout main branch
-      uses: actions/checkout@v4  # Checkout the code from the main branch
+    - name: Checkout code
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'  # Angular 19 works fine on Node 18 or Node 20
+        node-version: '18'  # or you can use 20
 
     - name: Install project dependencies
       run: npm install
-      working-directory: ./  # Install dependencies from the root directory
 
     - name: Install Angular CLI
-      run: npm install -g @angular/cli@19  # Install Angular CLI version 19 globally
+      run: npm install -g @angular/cli@19
 
-    - name: Build Angular app for production
-      run: ng build --configuration production
-      working-directory: ./  # Run the build from the root directory
+    - name: Build Angular app
+      run: ng build --configuration production --base-href=/AngularPortfolioWebsite/
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4  # Deploy the built app to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # Automatically use GitHub Actions token
-        publish_dir: ./dist/AngularPortfolioWebsite  # Ensure this path matches your Angular output directory
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist/AngularPortfolioWebsite
