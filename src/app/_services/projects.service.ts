@@ -29,7 +29,7 @@ export class ProjectsService {
       id: 2,
       name: 'Power BI',
       summary: 'Test Description',
-      description: 'This is sample Power BI Project',
+      description: 'This is a sample Power BI Project',
       projectLink: 'https://github.com/TaKaGith',
       pictures: ["../../assets/image_1.jpg","../../assets/image_2.jpg","../../assets/image_3.jpg"],
       tags: [Tag.DART],
