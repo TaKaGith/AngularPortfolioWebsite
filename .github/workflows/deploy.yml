@@ -1,4 +1,4 @@
-name: Build and Deploy Angular App to GitHub Pages
+name: Build and Deploy Angular App
 
 on:
   push:
@@ -10,25 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Install Angular CLI
-      run: npm install -g @angular/cli@19
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli@19
 
-    - name: Build Angular App
-      run: ng build --configuration production --base-href=/AngularPortfolioWebsite/
+      - name: Build Angular app
+        run: ng build --configuration production --base-href=/AngularPortfolioWebsite/
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/angular-portfolio-website/browser
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist/angular-portfolio-website
