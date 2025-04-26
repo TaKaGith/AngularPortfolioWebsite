@@ -3,7 +3,7 @@ name: Build and Deploy Angular App to GitHub Pages
 on:
   push:
     branches:
-      - main  # when you push to main branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,19 +16,19 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'  # or you can use 20
+        node-version: '18'
 
-    - name: Install project dependencies
+    - name: Install dependencies
       run: npm install
 
     - name: Install Angular CLI
       run: npm install -g @angular/cli@19
 
-    - name: Build Angular app
+    - name: Build Angular App
       run: ng build --configuration production --base-href=/AngularPortfolioWebsite/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/AngularPortfolioWebsite
+        publish_dir: ./dist/angular-portfolio-website/browser
