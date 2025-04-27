@@ -10,6 +10,9 @@ import { Title } from '@angular/platform-browser';
 export class ResumeComponent {
   
 isWorkExperienceOpen = false;
+isEducationOpen = false;
+isCertificationOpen = false;
+isSkillOpen = false;
 
   constructor(private titleService: Title, private render: Renderer2) {
     this.titleService.setTitle('Akif Aziz | Resume');

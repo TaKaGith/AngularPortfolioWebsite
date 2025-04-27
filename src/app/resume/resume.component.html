@@ -34,7 +34,16 @@
     
             </accordion-group>
     
-            <accordion-group heading="Education">
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+                </button>
                 <div style="text-align: left;">
                     <h2 class="mb-0">Bachelor of Information Technology(Hons)</h2>
                     <h3 class="text-primary">Universiti Teknologi PETRONAS(UTP)</h3>
@@ -46,14 +55,48 @@
                 </div>
             </accordion-group>
     
-            <accordion-group heading="Certifications">
-    
+            <accordion-group [(isOpen)]="isCertificationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certification</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Certified Kubernetes Administrator</h2>
+                    <h3 class="text-primary">The Linux Foundation</h3>
+                    <ul>
+                        <li>Jan 2025</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                    </ul>
+                </div>
             </accordion-group>
     
-            <accordion-group heading="Skills">
-    
-            </accordion-group>
-        </accordion>
+            <accordion-group [(isOpen)]="isSkillOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Root Cause Analysis</h2>
+                    <h3 class="text-primary">Newrise Learning</h3>
+                    <ul>
+                        <li>April 2025</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                    </ul>
+                </div>
+            </accordion-group>       
+         </accordion>
     </div>
 
 </div>
