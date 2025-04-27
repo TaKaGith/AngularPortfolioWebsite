@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -9,8 +9,20 @@ import { Title } from '@angular/platform-browser';
 })
 export class ResumeComponent {
   
-  constructor(private titleService: Title) {
+  constructor(private titleService: Title, private render: Renderer2) {
     this.titleService.setTitle('Akif Aziz | Resume');
    }
+
+   DonwloadFile() {
+    const link = this.render.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', 'assets/Akif_Aziz_Resume.pdf');
+    link.setAttribute('download', 'Akif_Aziz_Resume.pdf');
+    link.click();
+    link.remove();
+
+    
+   
+  }
 
 }
