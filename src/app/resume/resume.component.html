@@ -1,46 +1,56 @@
 <div class="container text-center">
     <button (click)="DonwloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
 
-    <accordion>
-        <accordion-group heading="Work Experience">
-            <div style="text-align: left;">
-                <h2 class="mb-0">Software Engineer</h2>
-                <h3 class="text-primary">SRM Intergration(M) Sdn Bhd</h3>
-                <ul>
-                    <li>Sept 2022 - Present</li>
-                    <li>Develop Software for IC test machine</li>
-                </ul>
-            </div>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div class="btn-link">Work Experience</div>
 
-            <div style="text-align: left;">
-                <h2 class="mb-0">Intership Trainee</h2>
-                <h3 class="text-primary">Robert Bosch Power Tools Sdn Bhd</h3>
-                <ul>
-                    <li>Jan 2021 - July 2021</li>
-                    <li>Develop Attending Daily Morning Meeting as IT Support</li>
-                </ul>
-            </div>
+                    <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                    <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                </button>
 
-        </accordion-group>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">SRM Intergration(M) Sdn Bhd</h3>
+                    <ul>
+                        <li>Sept 2022 - Present</li>
+                        <li>Develop Software for IC test machine</li>
+                    </ul>
+                </div>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Intership Trainee</h2>
+                    <h3 class="text-primary">Robert Bosch Power Tools Sdn Bhd</h3>
+                    <ul>
+                        <li>Jan 2021 - July 2021</li>
+                        <li>Develop Attending Daily Morning Meeting as IT Support</li>
+                    </ul>
+                </div>
+    
+            </accordion-group>
+    
+            <accordion-group heading="Education">
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bachelor of Information Technology(Hons)</h2>
+                    <h3 class="text-primary">Universiti Teknologi PETRONAS(UTP)</h3>
+                    <ul>
+                        <li>May 2019 - Aug 2022</li>
+                        <li>Major In Software Quality & Design</li>
+                        <li>Minor In Financial Management</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group heading="Certifications">
+    
+            </accordion-group>
+    
+            <accordion-group heading="Skills">
+    
+            </accordion-group>
+        </accordion>
+    </div>
 
-        <accordion-group heading="Education">
-            <div style="text-align: left;">
-                <h2 class="mb-0">Bachelor of Information Technology(Hons)</h2>
-                <h3 class="text-primary">Universiti Teknologi PETRONAS(UTP)</h3>
-                <ul>
-                    <li>May 2019 - Aug 2022</li>
-                    <li>Major In Software Quality & Design</li>
-                    <li>Minor In Financial Management</li>
-                </ul>
-            </div>
-        </accordion-group>
-
-        <accordion-group heading="Certifications">
-
-        </accordion-group>
-
-        <accordion-group heading="Skills">
-
-        </accordion-group>
-    </accordion>
 </div>
