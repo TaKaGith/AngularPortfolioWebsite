@@ -31,7 +31,7 @@ export class ProjectsService {
       summary: 'An KPI Dashboard development for the Digital Daily Morning Meeting Value Stream Area using Microsoft Power BI',
       description: 'Digital Daily Morning Meeting: Value Stream Area (DMM VS Area) Dashboard objectively being developed to indicate and monitor Bosch Production line performances by using selected Key Performance Indicator (KPI) on Value Stream Area Level.Target: To track the performance of every production line under the same Value Stream and find out which line causing the deviation to come out with problem solving. ',
       projectLink: '',
-      pictures: ["assets/powerbi_1.jpg","assets/powerbi_2.jpg","assets/powerbi_3.jpg"],
+      pictures: ["assets/powerbi_1.png","assets/powerbi_2.png","assets/powerbi_3.png"],
       tags: [Tag.DART ,Tag.POWERBI],
     },
   ];
