@@ -15,4 +15,13 @@ export class ProjectModalComponent {
 
   }
 
+  handleProjectLinkClick(event: Event, projectLink: string): void {
+    event.preventDefault(); // Prevent the default link behavior
+
+    if (!projectLink || projectLink.trim() === '') {
+        alert('Coming Soon!'); // Show "Coming Soon" message
+    } else {
+        window.open(projectLink, '_blank'); // Open the link in a new tab
+    }
+  }
 }

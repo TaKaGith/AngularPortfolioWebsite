@@ -13,7 +13,10 @@
     <h3 class="mt-2">Description</h3>
     <p>{{project.description}}</p>
 
-    <p>Project Link:   <a href={{project.projectLink}} target="_blank">click here</a></p>
+    <p>
+        Project Link: 
+        <a href="#" (click)="handleProjectLinkClick($event, project.projectLink)">click here</a>
+    </p>
 
     <hr>
     <div class="d-flex flex-wrap">

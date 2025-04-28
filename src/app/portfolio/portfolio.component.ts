@@ -62,12 +62,4 @@ export class PortfolioComponent implements OnInit {
     this.projects = this.projectService.GetProjects();
     this.filtering = false;
   }
-
-  handleProjectClick(project: any): void {
-    if (!project.projectLink || project.projectLink.trim() === '') {
-        alert('Coming Soon!'); // Replace this with a modal if needed
-    } else {
-        window.open(project.projectLink, '_blank'); // Open the link in a new tab
-    }
-  }
 }
