@@ -9,12 +9,12 @@ export class ProjectsService {
   projects: Project[] = [
     {
       id: 0,
-      name: 'Sample Angular Project',
-      summary: 'Test Description',
-      description: 'This is sample Angular Project',
+      name: 'Angular Portfolio Website',
+      summary: 'A website application that showcases my skills and projects.',
+      description: 'Developed using Angular 19 Framework and TypeScript, this portfolio website showcases my skills and projects. The website is designed to be responsive and user-friendly, making it easy for visitors to navigate and find the information they need.',
       projectLink: '',
       pictures: ["assets/image_1.jpg","assets/image_2.jpg","assets/image_3.jpg"],
-      tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
+      tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.CSS, Tag.HTML],
     },
     {
       id: 1,
