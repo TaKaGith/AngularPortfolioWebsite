@@ -43,6 +43,15 @@ export class ProjectsService {
       pictures: ["assets/unity_0.jpg","assets/unity_1.jpg","assets/unity_2.jpg","assets/unity_3.jpg","assets/unity_4.jpg","assets/unity_5.jpg","assets/unity_6.jpg","assets/unity_7.jpg"],
       tags: [Tag.CSHARP, Tag.UNITTY3D],
     },
+    {
+      id: 4,
+      name: 'Final Year Project',
+      summary: 'ShopLoc: Mobile Application for Locating Items Inside Retail Store',
+      description: 'Mobile Application function as shopping assistance for locating items inside the retails store using localization technique. Developed using Xamarin.Forms and C# programming language. The application is designed to help users locate items inside a retail store by providing a map and directions to the desired item.',
+      projectLink: '',
+      pictures: ["assets/shoploc_0.png","assets/shoploc_1.png","assets/shoploc_2.png","assets/shoploc_3.png","assets/shoploc_4.png","assets/shoploc_5.png"],
+      tags: [Tag.CSHARP, Tag.XAMARINFORM],
+    },
   ];
 
   constructor() {}
