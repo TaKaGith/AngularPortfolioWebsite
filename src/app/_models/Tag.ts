@@ -10,7 +10,7 @@ static readonly NODEJS = new Tag('Node.JS', 'brown');
 static readonly ASPNET = new Tag('ASP.NET', 'purple');
 static readonly JAVASCRIPT = new Tag('JavaScript', 'orange');
 static readonly REACT = new Tag('React', 'blue');
-static readonly DART = new Tag('Dart', 'yellow');
+static readonly DART = new Tag('Dart', 'orange');
 static readonly POWERBI = new Tag('Microsoft Power BI', 'yellowgreen');
 static readonly UNITTY3D = new Tag('Unity3D', 'Grey');
 

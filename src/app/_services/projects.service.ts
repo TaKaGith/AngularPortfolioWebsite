@@ -34,6 +34,15 @@ export class ProjectsService {
       pictures: ["assets/powerbi_1.png","assets/powerbi_2.png","assets/powerbi_3.png"],
       tags: [Tag.DART ,Tag.POWERBI],
     },
+    {
+      id: 3,
+      name: 'ThreeD ED',
+      summary: 'A mobile application integrated with augmented reality (AR) to help students in Malaysia learn history interactively.',
+      description: 'A project developed using Unity3D with augmented reality (AR) features to display 3D models of historical buildings in Malaysia. This project focuses on making the process of learning Malaysian history more interesting and fun',
+      projectLink: '',
+      pictures: ["assets/unity_0.jpg","assets/unity_1.jpg","assets/unity_2.jpg","assets/unity_3.jpg","assets/unity_4.jpg","assets/unity_5.jpg","assets/unity_6.jpg","assets/unity_7.jpg"],
+      tags: [Tag.CSHARP, Tag.UNITTY3D],
+    },
   ];
 
   constructor() {}
