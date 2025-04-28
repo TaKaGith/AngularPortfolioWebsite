@@ -11,7 +11,7 @@ export class ProjectsService {
       id: 0,
       name: 'Angular Portfolio Website',
       summary: 'A website application that showcases my skills and projects.',
-      description: 'Developed using Angular 19 Framework and TypeScript, this portfolio website showcases my skills and projects. The website is designed to be responsive and user-friendly, making it easy for visitors to navigate and find the information they need.',
+      description: 'Developed using Angular 19 Framework and TypeScript, this portfolio website showcases my skills and projects. Hosted on Github Page, with Github Action feature to automated the deployment process. This website is designed to be responsive and user-friendly, making it easy for visitors to navigate and find the information they need.',
       projectLink: '',
       pictures: ["assets/angular_0.png","assets/angular_1.png","assets/angular_2.png"],
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.CSS, Tag.HTML],
