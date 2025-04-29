@@ -19,6 +19,22 @@ export class PortfolioComponent implements OnInit {
   typescript: boolean = false;
   angular: boolean = false;
   dart: boolean = false;
+  css: boolean = false;
+  html: boolean = false;
+  phyton: boolean = false;
+  csharp: boolean = false;
+  cplusplus: boolean = false;
+  secsgem: boolean = false;
+  windform: boolean = false;
+  java: boolean = false;
+  nodejs: boolean = false;
+  aspnet: boolean = false;
+  javascript: boolean = false;
+  react: boolean = false;
+  powerbi: boolean = false;
+  unity3d: boolean = false;
+  xamarinform: boolean = false;
+
 // add filter here later akif
 
   filtering: boolean = false;

@@ -52,6 +52,15 @@ export class ProjectsService {
       pictures: ["assets/shoploc_0.png","assets/shoploc_1.png","assets/shoploc_2.png","assets/shoploc_3.png","assets/shoploc_4.png","assets/shoploc_5.png"],
       tags: [Tag.CSHARP, Tag.XAMARINFORM],
     },
+    {
+      id: 5,
+      name: 'Journey to Certified Kubernetes Administrator',
+      summary: 'Demonstrate DevOps and CI/CD pipeline',
+      description: 'A project to demonstrate the DevOps and CI/CD pipeline using Github Action and Docker. This project focuses on automating the deployment process and ensuring that the application is always up to date.',
+      projectLink: 'https://github.com/Aimanymous/Yayasan-Chill-Guy',
+      pictures: ["assets/cka_0.png","assets/cka_1.png","assets/cka_2.png","assets/cka_3.png","assets/cka_4.png",],
+      tags: [Tag.CSS, Tag.JAVASCRIPT, Tag.NODEJS, Tag.HTML],
+    },
   ];
 
   constructor() {}
